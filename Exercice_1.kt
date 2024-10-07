@@ -62,7 +62,7 @@ class Boutique(var listProduit: MutableList<Produit>) {
     }
 
     fun supprimer(code:Int):Boolean{
-        if(indiceDe(code)!=1){
+        if(indiceDe(code)!=-1){
             var i=indiceDe(code)
             listProduit.remove(listProduit[i])
             return true
