@@ -13,9 +13,7 @@ open class Produit(var code: Int = 1, var prix: Double = 0.0) {
 
     override fun equals(other: Any?): Boolean {
         if (other is Produit) {
-            if (this.code == other.code) {
-                return true
-            }
+            return  this.code == other.code
         }
         return false
 
@@ -124,4 +122,7 @@ fun main(){
 
     println(B1.nombreProduitEnSolde())
 
+    println("------------------------")
+
+println(P1.equals(PS1))
 }
